@@ -22,14 +22,14 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
-  let londonElement = document.querySelector("#london");
-  if (londonElement) {
-    let londonDateElement = londonElement.querySelector(".date");
-    let londonTimeElement = londonElement.querySelector(".time");
-    let londonTime = moment().tz("Europe/London");
+  let paramariboElement = document.querySelector("#paramaribo");
+  if (paramariboElement) {
+    let paramariboDateElement = paramariboElement.querySelector(".date");
+    let paramariboTimeElement = paramariboElement.querySelector(".time");
+    let paramariboTime = moment().tz("America/Paramaribo");
 
-    londonDateElement.innerHTML = londonTime.format("MMMM Do YYYY");
-    londonTimeElement.innerHTML = londonTime.format(
+    paramariboDateElement.innerHTML = paramariboTime.format("MMMM Do YYYY");
+    paramariboTimeElement.innerHTML = paramariboTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
